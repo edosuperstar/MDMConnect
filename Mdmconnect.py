@@ -1,5 +1,4 @@
 import socket
-import struct
 
 class MdmConnect:
 	def __init__(self, host, port):
@@ -158,8 +157,3 @@ class MdmConnect:
 			s.close()
 		return result
 
-
-
-connessione = MdmConnect("10.232.10.6",8234)
-output = connessione.setMuteOfInputChannel(3,False)
-print(output)
